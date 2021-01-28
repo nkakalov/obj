@@ -18,13 +18,10 @@ for (let [key, value] of Object.entries(a)){
      if(upperSym) {
          key = key.replace(upperSym, ' ' + upperSym)
      }
-
-    //console.log(value)
+     
     const func = (word) =>  word.substring(0,1).toUpperCase() + word.substring(1);
     const newstr = key.replace(/([^\s]+)/g, func);
     const newstr2 = newstr.replace('Location','Where to find')
     
-    console.log(newstr2.trim() + ': ' + value)
-    
-    
+    console.log(newstr2.trim() + ': ' + value) 
 }
